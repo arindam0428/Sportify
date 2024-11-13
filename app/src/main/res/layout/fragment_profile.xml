@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Select Profile Image Button and ImageView (placed at the top) -->
+        <Button
+            android:id="@+id/select_image_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Select Profile Image" />
+
+        <ImageView
+            android:id="@+id/profile_image"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:src="@drawable/baseline_perm_identity_24"
+            android:contentDescription="Profile Image"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:scaleType="centerCrop" />
+
+        <!-- Profile Details (below the image) -->
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Name"
+            android:textSize="18sp"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:textSize="18sp"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/total_games"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Total Games"
+            android:textSize="18sp"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/win_count"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Wins"
+            android:textSize="18sp"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/lose_count"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Losses"
+            android:textSize="18sp"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/average_rating"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Average Rating"
+            android:textSize="18sp"
+            android:inputType="numberDecimal" />
+
+        <EditText
+            android:id="@+id/rating_over_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Rating Over Time"
+            android:textSize="18sp"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/participation_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Participation List"
+            android:textSize="18sp"
+            android:inputType="textMultiLine"
+            android:lines="4" />
+
+        <!-- Save Profile Button -->
+        <Button
+            android:id="@+id/profile_save_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            android:text="Save Profile" />
+
+        <!-- Profile Data Display (below everything else) -->
+        <TextView
+            android:id="@+id/profile_display"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Profile Data"
+            android:textSize="18sp"
+            android:layout_marginTop="10dp" />
+
+    </LinearLayout>
+
+</ScrollView>

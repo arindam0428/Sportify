@@ -1,0 +1,12 @@
+<resources>
+    <!-- Add this array to define the sports -->
+    <string-array name="sports_array">
+        <item>Football</item>
+        <item>Basketball</item>
+        <item>Tennis</item>
+        <item>Cricket</item>
+        <item>Badminton</item>
+        <item>Hockey</item>
+    </string-array>
+    <string name="SportsApp">Sportify</string>
+</resources>
